@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LotoApp.Domain.Models
 {
-    internal class Ticket
+    public class Ticket
     {
+        public int Id { get; set; }
+        public IEnumerable<CombinationNumbers> Numbers { get; set; } = new List<CombinationNumbers>();
+        public User Player { get; set; }
+
     }
 }

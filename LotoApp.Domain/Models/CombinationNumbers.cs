@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace LotoApp.Domain.Models
 {
-    internal class CombinationNumbers
+    public class CombinationNumbers
     {
+        public int Id { get; set; }
+        public int Number { get; set; }
     }
 }

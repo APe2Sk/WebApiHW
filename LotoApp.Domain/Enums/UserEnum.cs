@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace LotoApp.Domain.Enums
 {
-    internal class UserEnum
+    public enum UserEnum
     {
+        PLAYER,
+        ADMIN
     }
 }

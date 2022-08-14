@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LotoApp.Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,17 @@ using System.Threading.Tasks;
 
 namespace LotoApp.Domain.Models
 {
-    internal class User
+    public class User
     {
+        public int Id { get; set; }
+        public string FirstName { get; set; } = string.Empty;
+        public string LastName { get; set; } = string.Empty;
+        public string Adress { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;   
+
+        public UserEnum Role { get; set; }
+
+
+
     }
 }
